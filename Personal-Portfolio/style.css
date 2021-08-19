@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 64%;
+    margin: 0 auto 0 auto;
+    font-size: 16px;
+    font-family: Arial, "Times New Roman", sans-serif;
+    color: #323232;
+    letter-spacing: 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#about-me {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+#about-me div {
+    margin-right: 16px;
+}
+
+#about-me h2 {
+    margin: 0 0 12px 0;
+}
+
+#about-me p {
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+#about-me img {
+    width: 400px;
+    height: 311px;
+    border-radius: 12px;
+}
+
+#projects {
+    padding: 16px 0;
+}
+
+#projects h2 {
+    margin-top: 16px 0;
+    font-size: 1.5rem;
+}
+
+#projects ul {
+    list-style-position: inside;
+    list-style-type: square
+}
+
+#projects li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#projects li:hover {
+    cursor: pointer;
+}
+
+#projects img {
+    width: 450px;
+    height: 300px;
+    display: none;
+    margin: 10px 0;
+}
+
+#skills {
+    padding: 16px 0;
+}
