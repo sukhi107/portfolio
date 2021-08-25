@@ -1,14 +1,23 @@
 html {
     box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    width: 64%;
-    margin: 0 auto 0 auto;
     font-size: 16px;
     font-family: Arial, "Times New Roman", sans-serif;
     color: #323232;
     letter-spacing: 1px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+#body-container {
+    width: 62%;
+    margin: auto;
 }
 
 header {
@@ -33,6 +42,11 @@ nav li {
     margin-left: 20px;
 }
 
+a {
+    color: #323232;
+    text-decoration: none;
+}
+
 #about-me {
     padding: 16px 0;
     display: flex;
@@ -53,7 +67,7 @@ nav li {
 }
 
 #about-me img {
-    width: 400px;
+    width: 300px;
     height: 311px;
     border-radius: 12px;
 }
@@ -69,12 +83,14 @@ nav li {
 
 #projects ul {
     list-style-position: inside;
-    list-style-type: square
+    list-style-type: square;
+    width: 200px;
 }
 
 #projects li {
     font-size: 18px;
     margin-bottom: 5px;
+    width: 160px;
 }
 
 #projects li:hover {
@@ -90,4 +106,49 @@ nav li {
 
 #skills {
     padding: 16px 0;
+}
+
+#skills div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills div img {
+    height: 32px;
+    width: 32px;
+}
+
+#contact-section {
+    padding: 16px 0;
+    margin: 0;
+}
+
+#contact-section div img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #body-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    #body-container {
+        width: 98%;
+    }
+    #about-me {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 20px !important;
+    }
 }
