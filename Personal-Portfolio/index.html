@@ -3,50 +3,62 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Personal Portfolio</title>
+    <script src="script.js" defer></script>
+    <title>Personal Portfolio - Home</title>
 </head>
 <body>
-    <header>
-        <h1>Sukhjeeevan Dhaliwal</h1>
+    <div id="body-container">
+        <header>
+            <h1>Sukhjeeevan Dhaliwal</h1>
 
-        <nav>
-            <ul>
-                <li href="#about-me">About Me</li>
-                <li href="#projects">Projects</li>
-                <li href="#skills">Skills</li>
-                <li href="#">Contact</li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section id="about-me">
-            <div>
-                <h2>About Me</h2>
-                <p>Hi! I'm Sukhi, English mathematician and web developer, chiefly known for my work on <a href="https://www.turnerscarpentry.co.uk/" target="_blank">turnerscarpentry.co.uk</a>. This is the first project I took on.</p>
-                <p>I have completed a BSc in Mathematics from the University of Surrey and am currently enrolled in a web development course.</p>
-                <p>In my free time I like to cook, go to the gym as well as play badminton, football and chess.</p>
-                <p>Fun fact! I've been programing for ?JavaScript? seconds!</p>
-            </div>
-            <img src="images/profile-pic.jpg" alt="Sukhjeevan Dhaliwal">
-        </section>
+        <main>
+            <section id="about-me">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Sukhi, English mathematician and web developer, chiefly known for my work on <a href="https://www.turnerscarpentry.co.uk/" target="_blank">turnerscarpentry.co.uk</a>. This is the first project I took on.</p>
+                    <p>I have completed a BSc in Mathematics from the University of Surrey and am currently enrolled in a web development course.</p>
+                    <p>In my free time I like to cook, go to the gym as well as play badminton, football and chess.</p>
+                    <p>Fun fact! This website has been running for <span id="seconds-counter"></span> seconds!</p>
+                </div>
+                <img src="images/profile-pic.jpg" alt="Sukhjeevan Dhaliwal">
+            </section>
 
-        <section id="projects">
-            <h2>Top Projects</h2>
-            <ul>
-                <li onclick="display1()">Club Website</li>
-                <img src="images/club-website.jpg" alt="club website screenshot" id="screenshot-1">
-                <li onclick="display2()">Tea Cozy</li>
-                <img src="images/tea-cozy.jpg" alt="tea cozy screenshot" id="screenshot-2">
-                <li onclick="display3()">VC Experience</li>
-                <img src="images/vc-experience.jpg" alt="vc experience screenshot" id="screenshot-3">
-            </ul>
-        </section>
+            <section id="projects">
+                <h2>Top Projects</h2>
+                <ul>
+                    <li onclick="display1()">Club Website</li>
+                    <img src="images/club-website.jpg" alt="club website screenshot" id="screenshot-1">
+                    <li onclick="display2()">Tea Cozy</li>
+                    <img src="images/tea-cozy.jpg" alt="tea cozy screenshot" id="screenshot-2">
+                    <li onclick="display3()">VC Experience</li>
+                    <img src="images/vc-experience.jpg" alt="vc experience screenshot" id="screenshot-3">
+                </ul>
+            </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-        </section>
-    </main>
+            <section id="skills">
+                <h2>Skills</h2>
+
+                <div>
+                    <img src="images/html5.png" alt="HTML5 logo">
+                    <img src="images/css3.png" alt="CSS3 logo">
+                    <img src="images/js.png" alt="JavaScript logo">
+                    <img src="images/python.png" alt="Python logo">
+                    <img src="images/php.png" alt="PHP logo">
+                    <img src="images/git.png" alt="Git logo">
+                    <img src="images/github.png" alt="GitHub logo">
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
