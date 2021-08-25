@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, "Times New Roman", sans-serif;
+    color: #323232;
+    letter-spacing: 1px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+#body-container {
+    width: 62%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+}
+
+#about-me {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+#about-me div {
+    margin-right: 16px;
+}
+
+#about-me h2 {
+    margin: 0 0 12px 0;
+}
+
+#about-me p {
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+#about-me img {
+    width: 300px;
+    height: 311px;
+    border-radius: 12px;
+}
+
+#projects {
+    padding: 16px 0;
+}
+
+#projects h2 {
+    margin-top: 16px 0;
+    font-size: 1.5rem;
+}
+
+#projects ul {
+    list-style-position: inside;
+    list-style-type: square;
+    width: 200px;
+}
+
+#projects li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    width: 160px;
+}
+
+#projects li:hover {
+    cursor: pointer;
+}
+
+#projects img {
+    width: 450px;
+    height: 300px;
+    display: none;
+    margin: 10px 0;
+}
+
+#skills {
+    padding: 16px 0;
+}
+
+#skills div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills div img {
+    height: 32px;
+    width: 32px;
+}
+
+#contact-section {
+    padding: 16px 0;
+    margin: 0;
+}
+
+#contact-section div img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #body-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    #body-container {
+        width: 98%;
+    }
+    #about-me {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    header {
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 20px !important;
+    }
+}
